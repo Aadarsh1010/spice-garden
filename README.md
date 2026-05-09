@@ -119,4 +119,3 @@ src/
 Built with passion by a senior full-stack developer to showcase modern web development excellence in the hospitality industry.
 
 **Ready for production deployment.**
-# spice-garden
