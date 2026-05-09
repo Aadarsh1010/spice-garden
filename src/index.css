@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #5C2A2A;
+  --color-gold: #D4AF37;
+  --color-saffron: #E67E22;
+  --color-cream: #F8F1E3;
+  --color-dark: #2C1810;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Additional custom styles */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #D4AF37;
+  border-radius: 20px;
+}
