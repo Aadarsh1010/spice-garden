@@ -40,12 +40,12 @@ const Footer = () => {
               </div>
               <div>
                 <div className="font-display text-5xl tracking-tighter">SPICE GARDEN</div>
-                <div className="text-xs text-[#D4AF37] tracking-[3px]">MUMBAI • EST 2010</div>
+                <div className="text-xs text-[#D4AF37] tracking-[3px]">KATHMANDU • EST 2010</div>
               </div>
             </div>
             
             <p className="max-w-sm text-[#D4AF37]/70 text-[15.5px] leading-relaxed">
-              An oasis of authentic Indian fine dining where centuries-old recipes are lovingly reinterpreted with the finest ingredients and modern technique.
+              An oasis of authentic Nepali fine dining where centuries-old recipes are lovingly reinterpreted with the finest ingredients and modern technique.
             </p>
             
             <div className="flex gap-6 mt-12">
@@ -111,17 +111,16 @@ const Footer = () => {
               <div className="flex gap-4">
                 <MapPin className="text-[#D4AF37] mt-1" size={22} />
                 <div className="text-sm">
-                  42 Marine Drive<br />
-                  Colaba, Mumbai<br />
-                  Maharashtra 400005
+                  Thamel, Kathmandu<br />
+                  Nepal
                 </div>
               </div>
               
               <div className="flex gap-4">
                 <Phone className="text-[#D4AF37] mt-1" size={22} />
                 <div>
-                  <a href="tel:+912228884455" className="block hover:text-[#D4AF37]">+91 22 2888 4455</a>
-                  <a href="mailto:reservations@spicegarden.in" className="block text-xs text-[#D4AF37]/70 mt-1 hover:text-[#D4AF37]">reservations@spicegarden.in</a>
+                  <a href="tel:+97714445555" className="block hover:text-[#D4AF37]">+977 1 444 5555</a>
+                  <a href="mailto:reservations@spicegarden.com.np" className="block text-xs text-[#D4AF37]/70 mt-1 hover:text-[#D4AF37]">reservations@spicegarden.com.np</a>
                 </div>
               </div>
               
@@ -150,9 +149,15 @@ const Footer = () => {
         {/* Mini Map & Legal */}
         <div className="mt-24 pt-12 border-t border-white/10 grid md:grid-cols-12 gap-8 text-xs">
           <div className="md:col-span-7">
-            <div className="bg-[#1F130D] h-56 rounded-3xl flex items-center justify-center text-[#D4AF37]/30 text-sm tracking-widest border border-[#D4AF37]/10">
-              MINI INTERACTIVE MAP WOULD GO HERE
-            </div>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8125!2d84.4270335!3d27.6663744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995f7e1e5f5f5f5%3A0x1234567890abcdef!2sHotel%20Pauwa!5e0!3m2!1sen!2snp!4v1700000000000" 
+              width="100%" 
+              height="240" 
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              className="rounded-3xl"
+            ></iframe>
           </div>
           
           <div className="md:col-span-5 text-[#D4AF37]/50 flex flex-col justify-between">
@@ -162,14 +167,14 @@ const Footer = () => {
             
             <div className="mt-auto pt-8 text-[10px] leading-loose">
               © {new Date().getFullYear()} SPICE GARDEN. ALL RIGHTS RESERVED.<br />
-              A HERITAGE BRAND BY THE SINGH FAMILY
+              A HERITAGE BRAND BY THE SINGH FAMILY • KATHMANDU, NEPAL
             </div>
           </div>
         </div>
       </div>
       
       <div className="text-center py-8 text-[10px] text-[#D4AF37]/30 tracking-[1.5px] border-t border-white/5 mt-12">
-        CRAFTED WITH PASSION • A JOURNEY THROUGH INDIA'S FINEST FLAVOURS
+        CRAFTED WITH PASSION • A JOURNEY THROUGH NEPAL'S FINEST FLAVOURS
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #5C2A2A;
+  --color-primary: #2C1810;
   --color-gold: #D4AF37;
   --color-saffron: #E67E22;
   --color-cream: #F8F1E3;
@@ -12,13 +12,28 @@
 
 body {
   font-family: "Inter", system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #1a120f;
+  color: #f5e8d3;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
-/* Additional custom styles */
+/* Smooth scroll and performance */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  will-change: transform;
+}
+
+/* Scrollbar */
 .scrollbar-thin::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -27,4 +42,14 @@ h1, h2, h3, h4, h5, h6 {
 .scrollbar-thin::-webkit-scrollbar-thumb {
   background-color: #D4AF37;
   border-radius: 20px;
+}
+
+/* Card hover improvements */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
